@@ -5,20 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Penpot plugin example</title>
   </head>
-  <body>
-    <p>Penpot plugin starter template</p>
 
-    <p>
-      Checkout the
-      <a target="_blank" href="https://help.penpot.app/plugins/"
-        >documentation</a
-      >
-      to get started.
-    </p>
+  <body class="flex flex-column gap-2">
 
-    <button type="button" data-appearance="primary" data-handler="create-text">
-      Create text
+  <input placeholder="choose action" type="text" id="search" />
+
+  <div class="flex flex-column gap-1">
+  <p class="title-050">GUIDES</p>
+  <section class="flex flex-row gap-1">
+    <button type="button" data-appearance="primary" data-handler="create-guides">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M20 9c0-.55-.45-1-1-1h-3V5c0-.55-.45-1-1-1s-1 .45-1 1v3h-4V5c0-.55-.45-1-1-1s-1 .45-1 1v3H5c-.55 0-1 .45-1 1s.45 1 1 1h3v4H5c-.55 0-1 .45-1 1s.45 1 1 1h3v3c0 .55.45 1 1 1s1-.45 1-1v-3h4v3c0 .55.45 1 1 1s1-.45 1-1v-3h3c.55 0 1-.45 1-1s-.45-1-1-1h-3v-4h3c.55 0 1-.45 1-1m-6 5h-4v-4h4z"/></svg>
+
+      Create
     </button>
+
+    <button type="button" data-appearance="primary" data-handler="clear-guides">
+      Clear
+    </button>
+  </section>
+  </div>
+
+  <div class="flex flex-column gap-1">
+  <p class="title-050">ALIGMENTS</p>
+    <p class="body-050">Fill</p>
+  <section class="flex flex-row gap-1">
+    <button type="button" data-appearance="primary" data-handler="fill-horizontal">
+      Horizontal
+    </button>
+    <button type="button" data-appearance="primary" data-handler="fill-vertical">
+      Vertical
+    </button>
+    <button type="button" data-appearance="primary" data-handler="fill-both">
+      Both
+    </button>
+  </section>
+  </div>
+  <div class="flex flex-column gap-1">
+    <p class="title-050">STYLES</p>
+    <button type="button" data-appearance="primary" data-handler="invert-colors">
+      Invert colors
+    </button>
+  </div>
+
+
+  <div class="flex flex-column gap-1">
+    <p class="title-050">DEBUG</p>
+
+    <section class="flex flex-column gap-1">
+      <button type="button" data-appearance="primary" data-handler="log-selection">
+        Log Selection
+      </button>
+      <p class="body-050">
+        Links : <br>
+        <a target="_blank" href="https://penpot-plugins-api-doc.pages.dev/">Documentation link</a>
+        <br>
+        <a target="_blank" href="https://help.penpot.app/plugins/">Plugin page</a>
+      </p>
+
+    </section>
+
+  </div>
+
+
 
     <script type="module" src="/src/main.ts"></script>
   </body>
