@@ -1,7 +1,7 @@
 {
-  "name": "penpot-plugin-starter-template",
+  "name": "rush",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite-live-preview",
@@ -15,5 +15,22 @@
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "vite-live-preview": "^0.2.2"
-  }
+  },
+  "description": "Rush your design in penpot with handfull tools",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MaloGermond/penpot-layout.git"
+  },
+  "keywords": [
+    "shortcut",
+    "fast",
+    "handfull"
+  ],
+  "author": "Malo Germond",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaloGermond/penpot-layout/issues"
+  },
+  "homepage": "https://github.com/MaloGermond/penpot-layout#readme"
 }
